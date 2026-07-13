@@ -1,0 +1,12 @@
+# Copy this file to terraform.tfvars and fill in your own values.
+# terraform.tfvars is where your actual secrets/settings live and
+# should NOT be committed to version control.
+
+aws_region        = "us-east-1"
+availability_zone = "us-east-1a"
+
+key_name = "your-existing-ec2-key-pair-name"   # must already exist in your AWS account/region
+my_ip    = "203.0.113.5/32"                    # replace with YOUR public IP + /32
+
+instance_type  = "t2.micro"
+instance_count = 2
